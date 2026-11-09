@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Classwork 3</title>
+        <style>
+            .container {
+                display: grid;
+                grid-template-areas:
+                    "header header header"
+                    "menu content content"
+                    "footer footer footer";
+                grid-gap: 3px;
+                background-color: rgba(143, 51, 60, 0.3);
+            }
+            .header {
+                grid-area: header;
+                background-color: rgba(143, 51, 60, 0.8);
+                padding: 5px;
+                text-align: center;
+            }
+            .menu {
+                grid-area: menu;
+                background-color: rgba(143, 51, 60, 0.8);
+                padding: 5px;
+            }
+            .content {
+                grid-area: content;
+                background-color: rgba(143, 51, 60, 0.8);
+                padding: 5px;
+            }
+            .footer {
+                grid-area: footer;
+                background-color: rgba(143, 51, 60, 0.8);
+                padding: 5px;
+                text-align: center;
+            }
+            @media only screen and (max-width: 792px) {
+                .container{
+                    background-color: rgba(151, 143, 130, 0.6);
+                     grid-template-areas:
+                        "header"
+                        "menu"
+                        "content"
+                        "footer";
+                }
+            }
+            @media only screen and (max-width: 480px) {
+                .container{
+                    background-color: rgba(51, 143, 13, 0.6);
+                     grid-template-areas:
+                        "header"
+                        "menu"
+                        "content"
+                        "footer";
+                }
+            }
+            button:hover{
+                background-color: rgba(143, 151, 160, 0.8);
+                color: white;
+                transform: scale(1.05);
+                
+            }
+            button{
+                transition: 0.5s ease-in-out;
+            }
+            a:hover {
+                color: #ff33cf;
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h2><i><b>Welcome to Fave Scents</b></i></h2>
+            </div>
+            <div class="menu">
+                <a href="">Home</a><br>
+                <a href="">About Us</a><br>
+                <a href="">Shop</a>
+            </div>
+            <div class="content">
+                <p>At Fave Scents, we believe smelling good should never be a luxury reserved for a few.<br> 
+                    We bring you affordable, quality fragrances that help you express yourself, boost your confidence and make every moment memorable.<br>
+                    Whether you love soft and sweet scents, fresh everyday fragrances or bold and captivating aromas, we have something for every mood and occasion.
+                </p>
+                <h3><b><i>What you'll find here</i></b></h3>
+                <ol>
+                    <li><b>Perfumes:</b>Beautiful fragrances for every personality.</li>
+                    <li><b>Perfume Oils:</b>Affordable oils for your everyday scent experience</li>
+                    <li><b>Body Mists:</b>Light, refreshing and easy to wear.</li>
+                    <li><b>Body Sprays:</b>Stay fresh and smell amazing.</li>
+                    <li><b>Roll-ons:</b>Everyday freshness you can count on.</li>
+                    <li><b>Deodorant Sprays:</b>Feel fresh and confident throughout the day.</li>
+                </ol>
+                <h3><b><i>Why shop with us?</i></b></h3>
+                <ul>
+                    <li><b>Affordable prices:</b>Competitive prices on high-quality fragrances</li>
+                    <li><b>Carefully selected fragrances:</b>We handpick each fragrance to ensure it meets our quality standards.</li>
+                    <li><b>Fast and reliable shipping:</b>We ship your order quickly and efficiently.</li>
+                    <li><b>Something for every budget:</b>We offer a wide range of options to suit all budgets.</li>
+                    <li><b>Excellent customer service:</b>Our team is always ready to assist you with any questions or concerns.</li>
+                </ul>
+                <button type="button" name="shopnow" id="shopnow">Shop Now</button>
+            </div>
+            <div class="footer">
+                <p>Copyright &copy; <b><i>Fave Scents — Own Your Aura.</i></b>2026 Fave Scents. All rights reserved.</p>
+            </div>
+        </div>
+    </body>
+</html>
